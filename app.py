@@ -7,12 +7,11 @@ import pickle
 import streamlit as st
 
 #path=r"C:\Users\berid\python\yts mx project"
-path=''
 
 
 
 #load movies df
-df=pd.read_csv(os.path.join(path,'scraped_data','merged_df.csv'))
+df=pd.read_csv(os.path.join('scraped_data','merged_df.csv'))
 df['TITLE_YEAR']=df['TITLE']+' ('+df['YEAR'].astype(str)+')'
 
 
@@ -21,9 +20,9 @@ df['TITLE_YEAR']=df['TITLE']+' ('+df['YEAR'].astype(str)+')'
 #load similarity matrix
 loaded_parts = []
 
-for file in os.listdir(os.path.join(path,'scraped_data','similarities_matrix')):
+for file in os.listdir(os.path.join('scraped_data','similarities_matrix')):
     if file.endswith('.pkl'):
-        file_path=os.path.join(path,'scraped_data','similarities_matrix',file)
+        file_path=os.path.join('scraped_data','similarities_matrix',file)
         part_of_matrix=pickle.load(open(file_path,'rb'))
         loaded_parts.append(part_of_matrix)
 
