@@ -6,12 +6,9 @@ import pickle
 
 import streamlit as st
 
-<<<<<<< HEAD
 path=r"C:\Users\berid\python\yts mx project"
 #path=''
-=======
-#path=r"C:\Users\berid\python\yts mx project"
->>>>>>> d538124448cd6720e166d1c4cb23d2f00154806b
+
 
 
 
