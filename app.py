@@ -6,8 +6,8 @@ import pickle
 
 import streamlit as st
 
-path=r"C:\Users\berid\python\yts mx project"
-#path=''
+#path=r"C:\Users\berid\python\yts mx project"
+path=''
 
 
 
